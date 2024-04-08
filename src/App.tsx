@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Routes>
-        {/* <Route path="/about" element={<About/>}/> */}
+        <Route path="/*" element={<Home/>}/>
         <Route path="/users" element={MemoizedUsersComponent} />
       </Routes>
     </div>)
