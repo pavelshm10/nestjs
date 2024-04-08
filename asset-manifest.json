@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pavelshm10/nestjs/static/css/main.f855e6bc.css",
-    "main.js": "/pavelshm10/nestjs/static/js/main.a577077b.js",
-    "static/js/453.ad6eb26e.chunk.js": "/pavelshm10/nestjs/static/js/453.ad6eb26e.chunk.js",
-    "index.html": "/pavelshm10/nestjs/index.html",
-    "main.f855e6bc.css.map": "/pavelshm10/nestjs/static/css/main.f855e6bc.css.map",
-    "main.a577077b.js.map": "/pavelshm10/nestjs/static/js/main.a577077b.js.map",
-    "453.ad6eb26e.chunk.js.map": "/pavelshm10/nestjs/static/js/453.ad6eb26e.chunk.js.map"
+    "main.css": "/pavelshm10/nestjs/tree/main/front/static/css/main.f855e6bc.css",
+    "main.js": "/pavelshm10/nestjs/tree/main/front/static/js/main.c578ff1a.js",
+    "static/js/453.ad6eb26e.chunk.js": "/pavelshm10/nestjs/tree/main/front/static/js/453.ad6eb26e.chunk.js",
+    "index.html": "/pavelshm10/nestjs/tree/main/front/index.html",
+    "main.f855e6bc.css.map": "/pavelshm10/nestjs/tree/main/front/static/css/main.f855e6bc.css.map",
+    "main.c578ff1a.js.map": "/pavelshm10/nestjs/tree/main/front/static/js/main.c578ff1a.js.map",
+    "453.ad6eb26e.chunk.js.map": "/pavelshm10/nestjs/tree/main/front/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.a577077b.js"
+    "static/js/main.c578ff1a.js"
   ]
 }
