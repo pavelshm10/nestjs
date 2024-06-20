@@ -9,7 +9,7 @@ import Home from './components/home/Home';
 
 function App() {
   const MemoizedUsersComponent = useMemo(() => <Users />, []);
-  console.log("test123");
+  console.log("4");
   return (
     <div>
       <Routes>
