@@ -1,9 +1,9 @@
-import axios from 'axios';
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+// import axios from 'axios';
+import { useCallback, useEffect, useState } from 'react'
 // const MemoizedUsersComponent = useMemo(() => <Users />, []);
 
 const Users = () => {
-    const [data, setData] = useState(null);
+    // const [data, setData] = useState(null);
     // console.log("dddd");
     const callbackify=useCallback(() => {
         console.log("inssss")

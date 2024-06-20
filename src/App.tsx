@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import './App.css';
-import { Routes, Route, BrowserRouter, Router } from 'react-router-dom';
-import About from './components/about/About';
+import { Routes, Route } from 'react-router-dom';
 import Users from './components/users/Users';
 import Home from './components/home/Home';
+import About from './components/about/About';
 
 
 
@@ -15,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/*" element={<Home/>}/>
         <Route path="/users" element={MemoizedUsersComponent} />
+        <Route path="/about" element={<About/>}/>
+        {/* <Route path="/about" element={<About/>}/> */}
       </Routes>
     </div>)
 }
