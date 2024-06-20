@@ -3,38 +3,26 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Set the branch you want to deploy from
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build the app
+      - name: Build
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-
-      - name: Check deployment status
         run: |
-          if [ $? -eq 0 ]; then
-            echo "Deployment successful!"
-          else
-            echo "Deployment failed!"
-            exit 1
-          fi
+          git config --global user.email "pavelsh00@gmail.com"
+          git config --global user.name "pavelshm10"
+          npm run deploy  # Adjust if your deployment script/command differs
+
+      - name: Cleanup
+        run: rm -rf node_modules  # Clean up node_modules to reduce repo size
