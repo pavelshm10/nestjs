@@ -1,5 +1,5 @@
 // import axios from 'axios';
-import React, { useCallback, useEffect } from 'react'
+import React, { useEffect } from 'react'
 // const MemoizedUsersComponent = useMemo(() => <Users />, []);
 
 const Users = () => {
