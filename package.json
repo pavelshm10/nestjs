@@ -45,5 +45,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://pavelshm10.github.io/nestjs"
+  "homepage": "https://pavelshm10.github.io/nestjs",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }
