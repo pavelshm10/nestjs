@@ -1,6 +1,5 @@
 name: Deploy to GitHub Pages
-env:
-    GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+
 on:
   push:
     branches:
@@ -11,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
       - name: Checkout repository
         uses: actions/checkout@v2
 
