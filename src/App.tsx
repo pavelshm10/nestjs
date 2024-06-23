@@ -9,7 +9,6 @@ import About from './components/about/About';
 
 function App() {
   const MemoizedUsersComponent = useMemo(() => <Users />, []);
-  console.log("42223123");
   return (
     <div>
       <Routes>
