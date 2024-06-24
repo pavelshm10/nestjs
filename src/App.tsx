@@ -1,24 +1,15 @@
-import React,{ useMemo } from 'react';
+import React from 'react';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Users from './components/users/Users';
-import Home from './components/home/Home';
-import About from './components/about/About';
+import ProductList from './components/products/ProductList';
 
 
 
 function App() {
-  const MemoizedUsersComponent = useMemo(() => <Users />, []);
-  console.log('hi');
   return (
-    <div>
-      <Routes>
-        <Route path="/*" element={<Home/>}/>
-        <Route path="/users" element={MemoizedUsersComponent} />
-        <Route path="/about" element={<About/>}/>
-        {/* <Route path="/about" element={<About/>}/> */}
-      </Routes>
-    </div>)
+    <div className="App">
+      <ProductList />
+    </div>
+  )
 }
 
 export default App;
