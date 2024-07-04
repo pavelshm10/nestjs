@@ -4,11 +4,12 @@ import classes from './ProductList.module.scss';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
-
+    const apiUrl = process.env.REACT_APP_BASE_URL;
     useEffect(() => {
+        console.log({apiUrl});
         const fetchData = async () => {
           try {
-            const response = await fetch('/api/products');
+            const response = await fetch('${apiUrl}/api/products');
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
             }
