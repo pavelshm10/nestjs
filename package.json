@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "build:gh-pages": "REACT_APP_PUBLIC_URL=https://pavelshm10.github.io/nestjs/ react-scripts build",
+    "deploy": "npm run build:gh-pages && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

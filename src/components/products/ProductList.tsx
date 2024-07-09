@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Product } from '../../types/product';
 import classes from './ProductList.module.scss';
+import config from '../../config';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
     const apiUrl = process.env.REACT_APP_BASE_URL;
     useEffect(() => {
-        console.log({apiUrl});
+        // console.log({apiUrl});
         const fetchData = async () => {
           try {
-            const response = await fetch('${apiUrl}/api/products');
+            console.log({config})
+            const response = await fetch(`${config.apiUrl}/api/products`);
+            console.log({response})
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
             }
