@@ -11,7 +11,7 @@ const ProductList = () => {
         const fetchData = async () => {
           try {
             console.log({config})
-            const response = await fetch(`${config.apiUrl}/api/products`);
+            const response = await fetch(`http://23.20.42.30:3000/api/products`);
             console.log({response})
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
