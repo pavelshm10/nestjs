@@ -5,7 +5,7 @@ import config from '../../config';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
-    const apiUrl = process.env.REACT_APP_BASE_URL;
+    // const apiUrl = process.env.REACT_APP_BASE_URL;
     useEffect(() => {
         // console.log({apiUrl});
         const fetchData = async () => {
