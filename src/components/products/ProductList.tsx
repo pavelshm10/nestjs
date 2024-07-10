@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Product } from '../../types/product';
 import classes from './ProductList.module.scss';
-import config from '../../config';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
