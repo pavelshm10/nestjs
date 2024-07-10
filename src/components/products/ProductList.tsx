@@ -7,7 +7,7 @@ const ProductList = () => {
     const apiBaseUrl = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
-        console.log({apiBaseUrl});
+        // console.log({apiBaseUrl});
         if(!apiBaseUrl) return;
         const fetchData = async () => {
           try {
