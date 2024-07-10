@@ -9,9 +9,9 @@ const ProductList = () => {
 
     useEffect(() => {
         console.log({apiBaseUrl});
+        if(!apiBaseUrl) return;
         const fetchData = async () => {
           try {
-            console.log({config})
             const response = await fetch(`${apiBaseUrl}/api/products`);
 
             console.log({response})
@@ -26,7 +26,7 @@ const ProductList = () => {
         };
     
         fetchData();
-      }, []);
+      }, [apiBaseUrl]);
 
     return (
         <div>
