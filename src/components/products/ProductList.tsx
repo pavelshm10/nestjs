@@ -5,13 +5,16 @@ import config from '../../config';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
-    // const apiUrl = process.env.REACT_APP_BASE_URL;
+    const apiBaseUrl = process.env.REACT_APP_API_URL;
+
     useEffect(() => {
-        // console.log({apiUrl});
+        console.log({apiBaseUrl});
         const fetchData = async () => {
           try {
             console.log({config})
-            const response = await fetch(`https://23.20.42.30:3000/api/products`);
+            // const response = await fetch(`https://23.20.42.30:3000/api/products`);
+            const response = await fetch(`https://localhost:3000/api/products`);
+
             console.log({response})
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
