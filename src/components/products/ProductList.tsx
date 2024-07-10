@@ -12,8 +12,7 @@ const ProductList = () => {
         const fetchData = async () => {
           try {
             console.log({config})
-            // const response = await fetch(`https://23.20.42.30:3000/api/products`);
-            const response = await fetch(`https://localhost:3000/api/products`);
+            const response = await fetch(`${apiBaseUrl}/api/products`);
 
             console.log({response})
             if (!response.ok) {
