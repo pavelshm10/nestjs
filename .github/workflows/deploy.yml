@@ -33,6 +33,7 @@ jobs:
           npm install -g gh-pages
           git remote set-url origin https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/pavelshm10/nestjs.git
           npm run deploy
+      
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:

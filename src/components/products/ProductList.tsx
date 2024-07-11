@@ -4,28 +4,28 @@ import classes from './ProductList.module.scss';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
-    const apiBaseUrl = process.env.REACT_APP_API_URL;
+    // const apiBaseUrl = process.env.REACT_APP_API_URL;
 
-    useEffect(() => {
-        // console.log({apiBaseUrl});
-        if(!apiBaseUrl) return;
-        const fetchData = async () => {
-          try {
-            const response = await fetch(`${apiBaseUrl}/api/products`);
+    // useEffect(() => {
+    //     // console.log({apiBaseUrl});
+    //     if(!apiBaseUrl) return;
+    //     const fetchData = async () => {
+    //       try {
+    //         const response = await fetch(`${apiBaseUrl}/api/products`);
 
-            console.log({response})
-            if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const data = await response.json();
-            setProducts(data);
-          } catch (error) {
-            console.error('Error fetching products:', error);
-          }
-        };
+    //         console.log({response})
+    //         if (!response.ok) {
+    //           throw new Error(`HTTP error! Status: ${response.status}`);
+    //         }
+    //         const data = await response.json();
+    //         setProducts(data);
+    //       } catch (error) {
+    //         console.error('Error fetching products:', error);
+    //       }
+    //     };
     
-        fetchData();
-      }, [apiBaseUrl]);
+    //     fetchData();
+    //   }, [apiBaseUrl]);
 
     return (
         <div>
