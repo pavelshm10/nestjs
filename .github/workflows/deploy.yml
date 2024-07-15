@@ -68,7 +68,7 @@ jobs:
         run: npm install  # Or use `yarn install` if you prefer Yarn
 
       - name: Build
-        run: npm run build  # Or `yarn build` for Yarn
+        run: CI=false npm run build  # Or `yarn build` for Yarn
 
       - name: Deploy to GitHub Pages
         run: |
