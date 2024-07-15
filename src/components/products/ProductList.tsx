@@ -3,7 +3,7 @@ import { Product } from '../../types/product';
 import classes from './ProductList.module.scss';
 
 const ProductList = () => {
-    const [products, setProducts] = useState<Product[]>([]);
+    // const [products, setProducts] = useState<Product[]>([]);
     // const apiBaseUrl = process.env.REACT_APP_API_URL;
 
     // useEffect(() => {

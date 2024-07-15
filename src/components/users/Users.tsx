@@ -21,9 +21,6 @@ const Users = () => {
     //     // fetchData();
     // }, []);
 
-    useEffect(()=>{
-        // callbackify();
-    },[])
     return (
         <div>users</div>
     )
