@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nestjs/static/css/main.ab94b9ef.css",
-    "main.js": "/nestjs/static/js/main.0accf73a.js",
+    "main.css": "/nestjs/static/css/main.f855e6bc.css",
+    "main.js": "/nestjs/static/js/main.c5f8d753.js",
     "static/js/453.ad6eb26e.chunk.js": "/nestjs/static/js/453.ad6eb26e.chunk.js",
     "index.html": "/nestjs/index.html",
-    "main.ab94b9ef.css.map": "/nestjs/static/css/main.ab94b9ef.css.map",
-    "main.0accf73a.js.map": "/nestjs/static/js/main.0accf73a.js.map",
+    "main.f855e6bc.css.map": "/nestjs/static/css/main.f855e6bc.css.map",
+    "main.c5f8d753.js.map": "/nestjs/static/js/main.c5f8d753.js.map",
     "453.ad6eb26e.chunk.js.map": "/nestjs/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab94b9ef.css",
-    "static/js/main.0accf73a.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.c5f8d753.js"
   ]
 }
