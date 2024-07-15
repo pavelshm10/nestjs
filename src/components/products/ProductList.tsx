@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Product } from '../../types/product';
-// import classes from '../products/ProductList.module.scss';
+import classes from '../products/ProductList.module.scss';
 
 const ProductList = () => {
     // const [products, setProducts] = useState<Product[]>([]);
@@ -30,7 +30,7 @@ const ProductList = () => {
     return (
         <div>
             <h1>Product List</h1>
-            <ul >
+            <ul className={classes.container}>
                 {/* {products.map(product => (
                     <li key={product.id}>
                         <h2>{product.name}</h2>
