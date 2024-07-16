@@ -17,7 +17,7 @@ const ProductList = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        //   credentials: "include",
+          credentials: "include",
         });
         console.log({ response });
         if (!response.ok) {
