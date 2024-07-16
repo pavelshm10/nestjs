@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Product } from '../../types/product';
 import classes from '../products/ProductList.module.scss';
+import axios from 'axios';
 
 const ProductList = () => {
     const [products, setProducts] = useState<Product[]>([]);
@@ -11,8 +12,12 @@ const ProductList = () => {
         if(!apiBaseUrl) return;
         const fetchData = async () => {
           try {
-            const response = await fetch(`${apiBaseUrl}/api/products`);
-
+            // const response = await fetch(`${apiBaseUrl}/api/products`);
+            const response = await axios.get(`${apiBaseUrl}/api/products`, {
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              });
             console.log({response})
             if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
