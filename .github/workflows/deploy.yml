@@ -4,19 +4,21 @@ on:
     branches:
       - main # Change this to your default branch if different
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    env:
+      CI: false  # Disable treating warnings as errors
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
-      - name: Install Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
+
       - name: Install dependencies
-        run: npm install
+        run: npm install  # or yarn install
+
       - name: Build
-        run: CI=false npm run build
+        run: npm run build  # or yarn build
+      
+      
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
@@ -26,3 +28,5 @@ jobs:
           npm install -g gh-pages
           git remote set-url origin https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/pavelshm10/nestjs.git
           npm run deploy
+      - name: Cleanup
+        run: rm -rf node_modules
