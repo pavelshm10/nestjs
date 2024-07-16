@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Change this to your default branch if different
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,5 +27,4 @@ jobs:
           npm install -g gh-pages
           git remote set-url origin https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/pavelshm10/nestjs.git
           npm run deploy
-      - name: Cleanup
-        run: rm -rf node_modules
+
