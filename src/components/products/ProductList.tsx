@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Product } from "../../types/product";
 import classes from "../products/ProductList.module.scss";
-import axios from "axios";
 
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -17,7 +16,7 @@ const ProductList = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: "include",
+        //   credentials: "include",
         });
         console.log({ response });
         if (!response.ok) {
