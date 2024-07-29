@@ -15,6 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:development": "REACT_APP_ENV=development react-scripts build",
+    "start:development": "react-scripts start --env=development",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
