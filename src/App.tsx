@@ -1,15 +1,13 @@
-import React from 'react';
-import './App.css';
-import ProductList from './components/products/ProductList';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import ProductList from "./components/products/ProductList";
 
-
-
-function App() {
+function App() { 
   return (
     <div className="App">
       <ProductList />
     </div>
-  )
+  );
 }
 
 export default App;
